@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="140dp"
+        android:lines="10"
+        android:maxLines="10"
+        android:text="Последовательность запуска процессов: \n runn1 -> runn2 -> runn3 \n Различие между методами «runOnUiThread» и «postDelayed» состоит в том, что метод «runOnUiThread» выполняет код в основном потоке, тогда как метод «postDelayed» позволяет отложить выполнение кода на определенный промежуток времени, но не блокирует основной поток.  В последовательности запуска этих методов нет четкой зависимости. Метод runOnUiThread может быть использован внутри метода post, чтобы обновить UI в основном потоке. Метод postDelayed может быть использован после вызова runOnUiThread, чтобы отложить обновление элементов пользовательского интерфейса на некоторое время."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
